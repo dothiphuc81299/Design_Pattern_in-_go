@@ -1,0 +1,7 @@
+why builder ?
+1. Khởi tạo các đối tượng của 1 struct nhưng struct đó có quá nhiều các thuộc tính.
+ khi khởi tạo bình thường cần nắm kieur dữ liệu,thứ tự :
+ vi du : account bank 
+2 .Có thể tạo ra nhiều biến thể khác nhau cho cùng một đối tượng
+House : normal House or iglooHouse 
+3. Khi co 1 struct khoi tao doi tuong  day du cac thuoc tinh ...
