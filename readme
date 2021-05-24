@@ -5,3 +5,9 @@ why builder ?
 2 .Có thể tạo ra nhiều biến thể khác nhau cho cùng một đối tượng
 House : normal House or iglooHouse 
 3. Khi co 1 struct khoi tao doi tuong  day du cac thuoc tinh ...
+-------
+product =>house
+builder interface
+concrete builder 1
+concrete builder 2
+director
