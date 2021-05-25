@@ -23,3 +23,15 @@ abstract factory interface 1 adidas
 abstract factory interface 2 nike
 concrete factory 1 
 concrete factory 2
+
+why prototype 
+tạo ra các bản sao của 1 đối tượng mà struct của nó ở bên trong chứa 1 struct khác.
+còn trong trường hợp các thuộc tính ở bên trong các struct chỉ là các primitive type 
+tức là  1 kiểu nguyên thủy ví dụ string,int . có thể sử dụng toán tử =
+
+--
+-prototype interface 
+    +clone 
+-concrete prototype 1 -File
+-concrete prototype 2 -Folder
+
