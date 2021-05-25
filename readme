@@ -35,3 +35,18 @@ tức là  1 kiểu nguyên thủy ví dụ string,int . có thể sử dụng t
 -concrete prototype 1 -File
 -concrete prototype 2 -Folder
 
+why Chain of responsibility
+khi chúng ta có 1 đối tượng và các đối tượng đó của chúng ta cần được xử lí
+ bởi một chuỗi các hành vi xử lí tuần tự 
+ vi du :Chúng ta có đối tượng , Đối tượng đó phải xử lí hành vi A sau khi kết thúc hành vi A,
+ chúng ta tiếp tục xử lí hành vi B sau khi kết thúc B, ... 1 chuỗi xử lí các hành vi
+
+--
+client ->patient
+handler interface ->department
+    +Execute
+    +SetNext
+concrete handler 1 ->reception
+concrete handler 2 ->doctor
+concrete handler 3 ->medicine
+concrete handler 4 ->cashier

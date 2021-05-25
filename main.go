@@ -2,6 +2,7 @@ package main
 
 import (
 	"design-pattern-go-code/src/abstractFactory"
+//	c "design-pattern-go-code/src/chainofresponsibility"
 	p "design-pattern-go-code/src/prototype"
 	"fmt"
 )
@@ -53,6 +54,16 @@ func main() {
 	fmt.Println("Printing for clone folder 2")
 	cloneFolder.Print(" ")
 
+	// chain of responsibilty
+	// medical := &c.Medical{}
+	// doctor := &c.Doctor{}
+	// doctor.SetNext(medical)
+
+	// reception := &c.Reception{}
+	// reception.SetNext(doctor)
+
+	// patient := &c.Patient{Name: "Yuh"}
+	// reception.Execute(patient)
 }
 
 func printShoeDetails(s abstractFactory.IShoe) {
