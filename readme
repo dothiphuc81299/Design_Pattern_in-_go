@@ -11,3 +11,15 @@ builder interface
 concrete builder 1
 concrete builder 2
 director
+
+why factory 
+1.1 nhu caau thi co 1 hoac nhieu cach khoi 1 hoac nhieu doi tuong san pham =>struct
+
+abstract product interface 1 shoe 
+abstract product interface 2 short 
+concrete product 1 
+concrete product 2
+abstract factory interface 1 adidas
+abstract factory interface 2 nike
+concrete factory 1 
+concrete factory 2
