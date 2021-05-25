@@ -2,8 +2,9 @@ package main
 
 import (
 	"design-pattern-go-code/src/abstractFactory"
-	
+
 	//	c "design-pattern-go-code/src/chainofresponsibility"
+	//"design-pattern-go-code/src/factoryMethod"
 	o "design-pattern-go-code/src/observer"
 	p "design-pattern-go-code/src/prototype"
 	"fmt"
@@ -67,16 +68,22 @@ func main() {
 	// patient := &c.Patient{Name: "Yuh"}
 	// reception.Execute(patient)
 
-
 	//observer
-	shirtItem :=o.NewItem("nike shirt")
-	observerFirst :=&o.Customer{ID:"phuc"}
-	observerSecond :=&o.Customer{ID:"mars"}
+	shirtItem := o.NewItem("nike shirt")
+	observerFirst := &o.Customer{ID: "phuc"}
+	observerSecond := &o.Customer{ID: "mars"}
 
 	shirtItem.Register(observerFirst)
 	shirtItem.Register(observerSecond)
 	shirtItem.DeRegister(observerSecond)
 	shirtItem.UpdateAvailability()
+
+	//factory
+	// payment := factoryMethod.GetPaymentMethod(factoryMethod.DebitCard)
+	// a := payment.Pay(20)
+	// fmt.Println("payment", a)
+	// payment = factoryMethod.GetPaymentMethod(factoryMethod.Cash)
+	// payment.Pay(50)
 }
 
 func printShoeDetails(s abstractFactory.IShoe) {

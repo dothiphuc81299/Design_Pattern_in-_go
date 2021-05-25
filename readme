@@ -60,3 +60,9 @@ subject interface->phat thong bao, nhan dang ki
 concrete subject ->item 
 observer interface
 concrete observer ->customer 
+
+why factory method 
+Tạo một đối tượng mà không cần thiết chỉ ra một cách chính xác lớp nào sẽ được tạo bằng cách nhóm các đối tượng
+ liên quan đến nhau và sử dụng 1 đối tượng trung gian để khởi tạo đối tượng cần tạo
+ví dụ: chúng ta sẽ tạo các phương thức thanh toán cho 1 shop bằng factory method, hình thức thanh toán
+ có thể bằng tiền mặt hoặc bằng thẻ debit
