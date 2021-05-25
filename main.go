@@ -2,7 +2,9 @@ package main
 
 import (
 	"design-pattern-go-code/src/abstractFactory"
-//	c "design-pattern-go-code/src/chainofresponsibility"
+	
+	//	c "design-pattern-go-code/src/chainofresponsibility"
+	o "design-pattern-go-code/src/observer"
 	p "design-pattern-go-code/src/prototype"
 	"fmt"
 )
@@ -64,6 +66,17 @@ func main() {
 
 	// patient := &c.Patient{Name: "Yuh"}
 	// reception.Execute(patient)
+
+
+	//observer
+	shirtItem :=o.NewItem("nike shirt")
+	observerFirst :=&o.Customer{ID:"phuc"}
+	observerSecond :=&o.Customer{ID:"mars"}
+
+	shirtItem.Register(observerFirst)
+	shirtItem.Register(observerSecond)
+	shirtItem.DeRegister(observerSecond)
+	shirtItem.UpdateAvailability()
 }
 
 func printShoeDetails(s abstractFactory.IShoe) {

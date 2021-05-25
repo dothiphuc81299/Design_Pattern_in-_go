@@ -50,3 +50,13 @@ concrete handler 1 ->reception
 concrete handler 2 ->doctor
 concrete handler 3 ->medicine
 concrete handler 4 ->cashier
+
+
+wwhy observer
+1 doi tuong phat di thong bao ->cho tat ca cac doi tuong da dang ki nhan tin voi observer
+
+--
+subject interface->phat thong bao, nhan dang ki 
+concrete subject ->item 
+observer interface
+concrete observer ->customer 
